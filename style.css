@@ -25,6 +25,8 @@ html {
     background-color: whitesmoke;
     height: 100vh;
     width: 100vw;
+    position: fixed;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,12 +37,12 @@ html {
   }
   
   /* Navigation */
-  .navigation-container {
+  .nav-container {
     position: fixed;
     top: 0;
   }
   
-  .navigation-items {
+  .nav-items {
     display: flex;
     justify-content: center;
   }
@@ -51,10 +53,19 @@ html {
     right: 0;
     width: 100%;
     height: 60px;
-  
+    z-index: -1;
   }
-  
-  
+
+  .clickable {
+    color: red;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .clickable:hover {
+    color: rgb(99, 12, 12);
+  }
+
   /* Images Container */
   .images-container {
   
@@ -72,9 +83,7 @@ html {
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
-  
-  
-  
+
   .card-body {
     padding: 20px;
   }
@@ -83,8 +92,6 @@ html {
     margin: 10px auto;
     font-size: 24px;
   }
-  
-  
   
   /* Save Confirmation */
   .save-confirmed {
@@ -98,8 +105,6 @@ html {
     right: 50px;
   }
   
-  /* Hidden */
-  
   
   /* Large Smartphone (Vertical) */
   @media screen and (max-width: 800px) {
@@ -108,12 +113,8 @@ html {
       font-size: 0.9rem;
   
     }
-  
-  
     .card-title {
       font-size: 20px;
-    }
-  
-    
+    } 
   }
   

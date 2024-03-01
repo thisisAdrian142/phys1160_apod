@@ -66,10 +66,16 @@ html {
     color: rgb(99, 12, 12);
   }
 
-  /* Images Container */
+  /* Images Container - Parent container */
   .images-container {
-  
+    width: 800px;
     margin-top: 50px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 25px 25px 0 0;
   }
   
   .card {
@@ -111,10 +117,19 @@ html {
     body {
       line-height: 1.4rem;
       font-size: 0.9rem;
-  
+      text-align: justify;
     }
+
+    .images-container {
+        width: 100%;
+    }
+
     .card-title {
       font-size: 20px;
     } 
+
+    .save-confirmed {
+        right: 25px;
+    }
   }
   
